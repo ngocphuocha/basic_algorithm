@@ -58,10 +58,28 @@ class Algorithm
     {
         return true ? (abs($x - 100) < 10 || abs($x - 200) < 10) : false;
     }
+
+    // Write a PHP program to create a new string where 'if' is added to the front of a given string. If the string already begins with 'if', return the string unchanged.
+
+    /**
+     * ex5
+     *
+     * @param  string $str
+     * @return string
+     */
+    public function ex5(string $str): string
+    {
+        if (strlen($str) > 2 && (substr($str, 0, 2) == 'if')) {
+            return $str;
+        } else {
+            return "if " . $str;
+        }
+    }
 }
 // create object for testing
 $test = new Algorithm();
 // echo $test->ex1(5, 8);
 // echo $test->ex2(53);
 // var_dump($test->ex3(20, 20));
-var_dump($test->ex4(89));
+// var_dump($test->ex4(89));
+var_dump($test->ex5('if else'));
