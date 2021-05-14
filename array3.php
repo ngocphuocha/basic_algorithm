@@ -32,9 +32,9 @@ $number_string = '';
 // exit;
 end($number); // Move a curent cursor to last element of array
 $last = key($number); // Return the index of the array element that the cusor is on
-for ($i = 0; $i < count($number); $i++) {
-    if (isset($number[$i])) {
-        $number_string .= $number[$i] . ' ';
-    }
+for ($i = 0; $i <= $last; $i++) {
+  if (isset($number[$i])) {
+    $number_string .= $number[$i] . ' ';
+  }
 }
 echo $number_string;

@@ -39,7 +39,6 @@ class Exercise
     // Write a program in C to read 10 numbers from keyboard and find their sum and average.
     public function ex4()
     {
-
     }
 }
 $test = new Exercise();
